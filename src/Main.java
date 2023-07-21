@@ -12,8 +12,13 @@ public class Main {
         String name;
         int start;
         int end;
+        int size;
 
-        Board board = new Board(100);
+        System.out.println("Enter the size of Board");
+        size = obj.nextInt();
+        obj.nextLine();
+
+        Board board = new Board(size);
 
         System.out.println("Enter the number of Snakes");
         noOfSnakes = obj.nextInt();
